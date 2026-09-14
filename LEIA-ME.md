@@ -94,9 +94,10 @@ Pronto: https://leisdemithra.com no ar, com cadeado.
 
 # A lista de espera
 
-**Estado atual:** o formulário abre o aplicativo de e-mail do visitante com a
-inscrição já escrita para `rafaelhfallgatter@gmail.com`. Funciona, mas perde
-quem não clicar em enviar.
+**Estado atual:** ATIVA. Os cadastros vão para o Formspree
+(`https://formspree.io/f/xrpgnraw`), ficam salvos no painel de lá e você recebe
+notificação no `rafaelhfallgatter@gmail.com`. O mailto continua no código apenas
+como rede de segurança, caso o endpoint seja apagado.
 
 **Para ativar de verdade:**
 

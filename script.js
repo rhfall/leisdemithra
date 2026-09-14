@@ -13,7 +13,7 @@
    e-mail do visitante com a inscrição já escrita (plano B, para
    o site nunca perder um cadastro). Veja o LEIA-ME.md.
    ──────────────────────────────────────────────────────────── */
-const FORM_ENDPOINT = "";
+const FORM_ENDPOINT = "https://formspree.io/f/xrpgnraw";
 const EMAIL_FALLBACK = "rafaelhfallgatter@gmail.com";
 
 /* ── ano no rodapé ─────────────────────────────────────────── */
