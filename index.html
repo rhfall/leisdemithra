@@ -4,11 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>As Leis de Mithra — Rafael Hoffmann Fallgatter</title>
-<meta name="description" content="Um romance de ficção científica sobre poder, consciência e um planeta onde as leis da física podem ser manipuladas. Entre na lista de espera e receba o aviso de lançamento.">
+<meta name="description" content="Um romance de ficção científica sobre poder, consciência e um planeta onde as leis da física podem ser manipuladas. Entre na lista e seja avisado do lançamento.">
 <meta name="author" content="Rafael Hoffmann Fallgatter">
-<meta name="theme-color" content="#06070d">
+<meta name="theme-color" content="#000000">
 
-<!-- Open Graph / redes sociais -->
 <meta property="og:type" content="book">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:title" content="As Leis de Mithra — Rafael Hoffmann Fallgatter">
@@ -21,245 +20,85 @@
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<canvas id="stars" aria-hidden="true"></canvas>
-<div class="aurora" aria-hidden="true"></div>
+<main>
 
-<header class="nav">
-  <a class="nav__brand" href="#topo">As Leis de Mithra</a>
-  <nav class="nav__links">
-    <a href="#mundo">O mundo</a>
-    <a href="#personagens">Personagens</a>
-    <a href="#autor">O autor</a>
-    <a class="nav__cta" href="#lista">Entrar na lista</a>
-  </nav>
-</header>
+  <header>
+    <h1>As Leis de Mithra</h1>
+    <p class="autor">Rafael Hoffmann Fallgatter</p>
+  </header>
 
-<main id="topo">
+  <section class="aviso">
+    <p class="aviso__titulo">Seja avisado quando o livro sair</p>
 
-  <!-- ─────────────────────────  HERO  ───────────────────────── -->
-  <section class="hero">
-    <div class="hero__crystal" aria-hidden="true">
-      <span class="shard shard--1"></span>
-      <span class="shard shard--2"></span>
-      <span class="shard shard--3"></span>
-    </div>
-
-    <div class="hero__content">
-      <p class="eyebrow">Romance de ficção científica · Em breve</p>
-      <h1 class="hero__title">As Leis<br><span>de Mithra</span></h1>
-      <p class="hero__tagline">O universo é regido por leis.<br>Até a humanidade descobrir Mithra.</p>
-      <p class="hero__author">Rafael Hoffmann Fallgatter</p>
-
-      <div class="hero__actions">
-        <a class="btn btn--primary" href="#lista">Avise-me do lançamento</a>
-        <a class="btn btn--ghost" href="#premissa">Ler a sinopse</a>
-      </div>
-    </div>
-
-    <a class="scroll-cue" href="#premissa" aria-label="Rolar para a sinopse"><span></span></a>
-  </section>
-
-  <!-- ─────────────────────────  PREMISSA  ───────────────────────── -->
-  <section id="premissa" class="section section--premissa">
-    <div class="wrap">
-      <p class="eyebrow reveal">A premissa</p>
-      <h2 class="section__title reveal">Regras absolutas</h2>
-
-      <ul class="laws">
-        <li class="law reveal"><span class="law__num">01</span><p>Uma pedra cai.</p></li>
-        <li class="law reveal"><span class="law__num">02</span><p>O tempo corre para a frente.</p></li>
-        <li class="law reveal"><span class="law__num">03</span><p>O calor flui do corpo mais quente para o mais frio.</p></li>
-      </ul>
-
-      <p class="lead reveal">
-        Até a humanidade descobrir <strong>Mithra</strong>, um planeta onde certos cristais são
-        capazes de alterar essas leis.
-      </p>
-
-      <p class="body reveal">
-        Ao longo de bilhões de anos, a vida em Mithra evoluiu ao redor dessas possibilidades. A
-        descoberta desencadeia uma corrida pelo controle do planeta e ameaça romper o frágil
-        equilíbrio entre as três grandes Corporações que governam a expansão da humanidade pelo
-        universo.
-      </p>
-    </div>
-  </section>
-
-  <!-- ─────────────────────────  O MUNDO  ───────────────────────── -->
-  <section id="mundo" class="section section--mundo">
-    <div class="wrap">
-      <p class="eyebrow reveal">O mundo</p>
-      <h2 class="section__title reveal">Onde a física deixa de valer</h2>
-
-      <div class="cards">
-        <article class="card reveal">
-          <h3>Animais que incendeiam o ar</h3>
-          <p>Defesas que só fazem sentido em um planeta onde a matéria e a energia obedecem a outro contrato.</p>
-        </article>
-        <article class="card reveal">
-          <h3>Rios voadores</h3>
-          <p>Uma geografia que se recusa a cair. Correntes de água suspensas sobre florestas impossíveis.</p>
-        </article>
-        <article class="card reveal">
-          <h3>Civilizações alienígenas</h3>
-          <p>Tecnologia desenvolvida a partir dos cristais, erguendo arquiteturas e mecanismos impossíveis para os padrões humanos.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- ─────────────────────────  CORPORAÇÕES  ───────────────────────── -->
-  <section class="section section--corp">
-    <div class="wrap">
-      <p class="eyebrow reveal">A disputa</p>
-      <h2 class="section__title reveal">Três modelos de governo,<br>três Inteligências Artificiais</h2>
-      <p class="body body--center reveal">
-        Uma humanidade repartida em três Corporações que governam sua expansão pelo universo —
-        e que agora disputam algo capaz de mudar as próprias regras da realidade.
-      </p>
-
-      <div class="corps">
-        <article class="corp reveal">
-          <span class="corp__mark" aria-hidden="true"></span>
-          <h3>UGDE</h3>
-          <p class="corp__full">União Geral Democrática do Êxodo</p>
-          <p>Governada por negociações entre IAs. A casa de Ayla — e da ciência que quer entender os cristais antes de todo mundo.</p>
-        </article>
-        <article class="corp reveal">
-          <span class="corp__mark" aria-hidden="true"></span>
-          <h3>StanLock</h3>
-          <p class="corp__full">A rival</p>
-          <p>O outro lado da corrida por Mithra. Já esteve em um conflito que terminou no extermínio de uma espécie alienígena.</p>
-        </article>
-        <article class="corp reveal">
-          <span class="corp__mark" aria-hidden="true"></span>
-          <h3>DeGov</h3>
-          <p class="corp__full">Governo descentralizado</p>
-          <p>O poder se acumula em Procurações. Basta reuni-las para que um cidadão sem importância passe a decidir o destino de planetas.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- ─────────────────────────  PERSONAGENS  ───────────────────────── -->
-  <section id="personagens" class="section section--chars">
-    <div class="wrap">
-      <p class="eyebrow reveal">No centro da disputa</p>
-      <h2 class="section__title reveal">Ayla e Bart</h2>
-
-      <div class="chars">
-        <article class="char reveal">
-          <p class="char__name">Ayla</p>
-          <p class="char__role">Cientista da UGDE</p>
-          <p>
-            Dedicou a vida a compreender as leis da natureza e, misteriosamente, é a única humana
-            capaz de interagir com os cristais. Compreendê-los pode lhe dar as respostas que buscou
-            a vida inteira, ao custo de sua própria humanidade. Ela fará qualquer coisa, qualquer
-            sacrifício, para dominá-los antes que a StanLock o faça.
-          </p>
-        </article>
-        <article class="char reveal">
-          <p class="char__name">Bart</p>
-          <p class="char__role">Cidadão da DeGov</p>
-          <p>
-            Até então sem importância, começa inesperadamente a acumular Procurações e, com elas,
-            influência dentro do governo descentralizado de sua Corporação. Sua vida muda de escala
-            quando o próprio fundador da DeGov o convida a integrar o grupo que garantirá que a
-            sentença do planeta GXT-2 saia como deve sair.
-          </p>
-        </article>
+    <form id="waitlist" novalidate>
+      <div class="linha">
+        <label class="sr-only" for="email">Seu e-mail</label>
+        <input id="email" name="email" type="email" autocomplete="email" required
+               placeholder="seu@email.com" aria-describedby="form-status">
+        <button type="submit">Avise-me</button>
       </div>
 
-      <p class="body body--center reveal">
-        Quando a disputa por Mithra começa a repetir os mesmos padrões, os dois se veem no centro
-        de uma crise capaz de desencadear uma nova guerra entre as Corporações.
-      </p>
-    </div>
-  </section>
-
-  <!-- ─────────────────────────  QUOTE  ───────────────────────── -->
-  <section class="quote">
-    <div class="wrap">
-      <p class="eyebrow reveal">Por baixo de tudo, uma única pergunta</p>
-      <blockquote class="reveal">O que conta como vida?</blockquote>
-    </div>
-  </section>
-
-  <!-- ─────────────────────────  AUTOR  ───────────────────────── -->
-  <section id="autor" class="section section--autor">
-    <div class="wrap wrap--split">
-      <div class="autor__portrait reveal">
-        <!-- Troque o src por uma foto sua (ex.: fotos/rafael.jpg) -->
-        <img src="autor.jpg" alt="Rafael Hoffmann Fallgatter" width="480" height="600"
-             onerror="this.closest('.autor__portrait').classList.add('is-empty'); this.remove();">
-        <span class="autor__placeholder" aria-hidden="true">RHF</span>
+      <div class="hp" aria-hidden="true">
+        <label for="empresa">Não preencha este campo</label>
+        <input id="empresa" name="empresa" type="text" tabindex="-1" autocomplete="off">
       </div>
 
-      <div class="autor__text">
-        <p class="eyebrow reveal">O autor</p>
-        <h2 class="section__title reveal">Rafael Hoffmann<br>Fallgatter</h2>
-        <p class="body reveal">
-          Engenheiro com MBA e mestrado em Engenharia por Harvard, passou anos construindo sistemas
-          de Inteligência Artificial para as maiores empresas do mundo.
-        </p>
-        <p class="body reveal">
-          <em>As Leis de Mithra</em> nasce desse lugar: um experimento sobre poder e consciência que
-          transforma questões cada vez menos hipotéticas — quem controla a IA, quem decide, quem
-          detém o poder — em conflitos de escala planetária. Uma aventura de sobrevivência,
-          descoberta e conspiração corporativa sobre o que uma sociedade se torna quando até as
-          leis da natureza passam a ter dono.
-        </p>
-      </div>
-    </div>
+      <p id="form-status" role="status" aria-live="polite"></p>
+    </form>
   </section>
 
-  <!-- ─────────────────────────  LISTA DE ESPERA  ───────────────────────── -->
-  <section id="lista" class="section section--lista">
-    <div class="wrap wrap--narrow">
-      <p class="eyebrow reveal">Lista de espera</p>
-      <h2 class="section__title reveal">Seja avisado no lançamento</h2>
-      <p class="body body--center reveal">
-        Deixe seu e-mail e receba um aviso quando <em>As Leis de Mithra</em> for publicado.
-        Sem spam — apenas novidades sobre o livro.
-      </p>
-
-      <form id="waitlist" class="form reveal" novalidate>
-        <div class="form__row">
-          <label class="sr-only" for="nome">Seu nome</label>
-          <input id="nome" name="nome" type="text" autocomplete="name" placeholder="Seu nome (opcional)">
-        </div>
-        <div class="form__row form__row--submit">
-          <label class="sr-only" for="email">Seu e-mail</label>
-          <input id="email" name="email" type="email" autocomplete="email" required
-                 placeholder="seu@email.com" aria-describedby="form-status">
-          <button class="btn btn--primary" type="submit">Quero ser avisado</button>
-        </div>
-
-        <!-- honeypot anti-spam -->
-        <div class="hp" aria-hidden="true">
-          <label for="empresa">Não preencha este campo</label>
-          <input id="empresa" name="empresa" type="text" tabindex="-1" autocomplete="off">
-        </div>
-
-        <p id="form-status" class="form__status" role="status" aria-live="polite"></p>
-        <p class="form__note">Seu e-mail será usado somente para avisar sobre o livro. Você pode sair da lista quando quiser.</p>
-      </form>
-    </div>
+  <section class="sinopse">
+    <p>
+      O universo é regido por leis. Uma pedra cai, o tempo corre para a frente, o calor flui do
+      corpo mais quente para o mais frio. São regras absolutas. Até a humanidade descobrir Mithra,
+      um planeta onde certos cristais são capazes de alterar essas leis. Ao longo de bilhões de
+      anos, a vida em Mithra evoluiu ao redor dessas possibilidades: animais que incendeiam o ar
+      para se defender, rios voadores e civilizações alienígenas cuja tecnologia se desenvolveu a
+      partir da utilização dos cristais, erguendo arquiteturas e mecanismos impossíveis para os
+      padrões humanos. A descoberta desencadeia uma corrida pelo controle do planeta e ameaça
+      romper o frágil equilíbrio entre as três grandes Corporações que governam a expansão da
+      humanidade pelo universo.
+    </p>
+    <p>
+      No centro dessa disputa está Ayla, uma cientista da União Geral Democrática do Êxodo (UGDE)
+      que dedicou a vida a compreender as leis da natureza e que, misteriosamente, é a única humana
+      capaz de interagir com os cristais. Compreendê-los pode lhe dar as respostas que buscou a vida
+      inteira, ao custo de sua própria humanidade. Ela fará qualquer coisa, qualquer sacrifício,
+      para dominá-los antes que a StanLock o faça. Do outro lado está Bart, um cidadão até então sem
+      importância da DeGov que inesperadamente começa a acumular Procurações e, com elas, influência
+      dentro do governo descentralizado de sua Corporação. Sua vida muda de escala quando o próprio
+      fundador da DeGov o convida a integrar um grupo que garantirá que a sentença do planeta GXT-2
+      saia como deve sair. O julgamento busca responsabilizar os envolvidos em um conflito entre
+      UGDE e StanLock que culminou no extermínio de uma espécie alienígena. Quando a disputa por
+      Mithra começa a repetir os mesmos padrões, Ayla e Bart se veem no centro de uma crise capaz de
+      desencadear uma nova guerra entre as Corporações, desta vez pelo controle de algo que pode
+      mudar as próprias regras da realidade.
+    </p>
+    <p>
+      Das negociações entre as IAs governantes da UGDE às cavernas impossíveis de Mithra, das naves
+      das Corporações às florestas onde as leis da física deixam de valer, <em>As Leis de Mithra</em>
+      é um experimento sobre poder e consciência: uma humanidade repartida em três modelos de
+      governo baseados em Inteligência Artificial e um mundo cuja evolução ocorreu sob leis que
+      podem ser manipuladas. Por baixo de tudo, uma única pergunta: o que conta como vida? Escrito
+      por Rafael Fallgatter, engenheiro com MBA e mestrado em Engenharia por Harvard que passou anos
+      construindo sistemas de Inteligência Artificial para as maiores empresas do mundo, o romance
+      transforma questões cada vez menos hipotéticas — quem controla a IA, quem decide, quem detém o
+      poder — em conflitos de escala planetária. Uma aventura de sobrevivência, descoberta e
+      conspiração corporativa sobre o que uma sociedade se torna quando até as leis da natureza
+      passam a ter dono.
+    </p>
   </section>
+
+  <footer>
+    © <span id="ano">2026</span> Rafael Hoffmann Fallgatter
+  </footer>
 
 </main>
-
-<footer class="footer">
-  <div class="wrap">
-    <p class="footer__title">As Leis de Mithra</p>
-    <p class="footer__meta">© <span id="ano">2026</span> Rafael Hoffmann Fallgatter · Todos os direitos reservados</p>
-  </div>
-</footer>
 
 <script src="script.js"></script>
 </body>
